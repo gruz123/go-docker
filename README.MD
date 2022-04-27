@@ -7,10 +7,10 @@
 ```
 go run main.go
 ```
-which will kick of a server on http://localhost:8081.
+which will kick of a server on http://localhost:10002.
 
 # Run with Docker
 ```
 docker build -t my-go-app .
-docker run -p 8080:8081 -it my-go-app
+docker run -p 10002:10002 -it my-go-app
 ```
