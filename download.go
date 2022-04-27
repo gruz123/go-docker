@@ -30,5 +30,5 @@ func GetImage(w http.ResponseWriter, r *http.Request) {
 		log.Println("shit happens")
 	}
 	w.Write(path)
-	log.Println("Хуита!!!")
+	log.Println("OK!")
 }
