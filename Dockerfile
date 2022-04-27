@@ -1,7 +1,7 @@
 FROM golang:1.17.9-buster
-RUN mkdir /usr/local/go/src/zalupa
-ADD . /usr/local/go/src/zalupa
-ADD ./img  /usr/local/go/src/zalupa/img
-WORKDIR /usr/local/go/src/zalupa
-RUN go build -o zalupa .
-CMD ["/usr/local/go/src/zalupa/zalupa"]
+RUN mkdir /usr/local/go/src/img-input
+ADD . /usr/local/go/src/img-input
+ADD ./img  /usr/local/go/src/img-input/img
+WORKDIR /usr/local/go/src/img-input
+RUN go build -o ii .
+CMD ["/usr/local/go/src/img-input/ii"]
